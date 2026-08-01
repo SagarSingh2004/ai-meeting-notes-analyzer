@@ -27,7 +27,6 @@ The application automatically extracts discussion topics, generates concise meet
   - DOCX
 - ✍️ Manual transcript input
 - 📄 Download meeting report as Markdown
-- 📑 Download meeting report as PDF
 - 🎨 Interactive Streamlit UI
 - ✅ Structured outputs using Pydantic
 
