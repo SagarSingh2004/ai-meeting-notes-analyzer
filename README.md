@@ -6,6 +6,12 @@ The application automatically extracts discussion topics, generates concise meet
 
 ---
 
+## 🌐 Live Demo
+
+👉 **[Try it on Streamlit Cloud](https://ai-meeting-notes-analyzer-5yp3hpha3hv5frcyzojrvv.streamlit.app/)**
+
+---
+
 ## 🚀 Features
 
 - 🤖 Multi-Agent AI workflow using LangGraph
@@ -324,6 +330,8 @@ GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
 streamlit run app.py
 ```
 
+Or skip local setup entirely and use the hosted version: **[Live Demo](https://ai-meeting-notes-analyzer-5yp3hpha3hv5frcyzojrvv.streamlit.app/)**
+
 ---
 
 # 📌 Future Improvements
@@ -335,7 +343,6 @@ streamlit run app.py
 - 📊 Speaker Analytics
 - 😊 Sentiment Analysis
 - 📌 Decision Extraction Agent
-- ☁️ Cloud Deployment
 - 🔐 User Authentication
 - 📈 Meeting Analytics Dashboard
 
