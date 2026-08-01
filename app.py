@@ -42,7 +42,7 @@ def generate_markdown(result):
 
     markdown += (
         f"\n## Priority\n\n"
-        f"{result['priority']}"
+        f"{result['report']['Priority']}"
     )
 
     return markdown
@@ -96,6 +96,7 @@ if generate:
 
         try:
             result = graph.invoke(state)
+            report = result["report"]
 
             # -----------------------------
             # Metrics
@@ -114,7 +115,7 @@ if generate:
 
             metric3.metric(
                 label="Priority",
-                value=result["priority"]
+                value=report["Priority"]
             )
 
             st.divider()
@@ -155,9 +156,12 @@ if generate:
 
                 with st.expander("🔥 Priority", expanded=True):
 
-                    priority = result["priority"]
+                    priority = report["Priority"]
 
-                    if priority.lower() == "high":
+                    if not result["action_items"]:
+                        st.info(priority)
+
+                    elif priority.lower() == "high":
                         st.error("🔴 High Priority")
 
                     elif priority.lower() == "medium":
