@@ -201,11 +201,11 @@ Conditional Routing
  ┌─┴──────────────┐
  │                │
  ▼                ▼
-Priority      Output Node
-Agent
- │
- ▼
-END
+Priority ───► Output Node
+Agent             │
+                  │
+                  ▼
+                 END
 ```
 
 ---
